@@ -1,0 +1,544 @@
+/*RESPONSIVE*/
+/*Estilos Generales*/
+
+/*SMARTPHONE*/
+@media (max-width: 479px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Quicksand', sans-serif;
+    }
+
+    .border {
+        border: solid 1px #000000;
+    }
+
+    body {
+        height: 100vh;
+        width: 100%;
+    }
+
+    span {
+        background-color: rgb(253, 253, 253);
+        margin-bottom: 30px;
+        padding: 10px;
+    }
+
+    img {
+        margin: 0px 15px;
+    }
+
+
+    header {
+        background-color: rgb(255, 226, 59);
+        color: rgb(7, 6, 6);
+        padding: 0px;
+    }
+
+    img.logo {
+        width: 12%;
+    }
+
+    h1 {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: bolder;
+        margin: 5px;
+        text-align: center;
+    }
+
+    footer {
+        background-color: black;
+        color: rgb(255, 226, 59);
+        padding: 5px;
+        text-align: center;
+        font-family: 'Quicksand', sans-serif;
+    }
+
+    p {
+        font-family: 'Quicksand', sans-serif;
+        text-align: center;
+        font-weight: bold;
+        border-style: none none solid none;
+        border-width: 10px;
+        border-color: rgb(0, 0, 0);
+        padding: 3px;
+        margin: 0px 30px 30px 30px;
+    }
+
+    p:hover {
+        background-color: black;
+        color: rgb(255, 226, 59);
+    }
+
+
+    /*FlexBoxMenu*/
+
+    .flexMenu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    span {
+        width: 100px;
+        height: 20px;
+        background-color: #000000;
+        border-radius: 0px;
+        margin: 0px;
+        padding: 10px;
+        color: #ffffff;
+        list-style-type: none;
+        cursor: pointer;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: bold;
+    }
+
+    span a {
+        color: white;
+        text-decoration-line: none;
+        cursor: pointer;
+    }
+
+    span a:hover {
+        background-color: black;
+        color: rgb(255, 226, 59);
+    }
+
+    /*FlexBoxFiltros*/
+
+    .flexFiltros {
+        display: flex;
+        flex-direction: column;
+    }
+
+    li {
+        height: 20px;
+        background-color: rgb(241, 241, 241);
+        padding: 7px;
+        color: #000000;
+        list-style-type: none;
+        cursor: pointer;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: bold;
+    }
+
+    li:hover {
+        background-color: black;
+        color: rgb(255, 226, 59);
+    }
+
+    aside {
+        background-color: rgb(241, 241, 241);
+    }
+
+    .productosFlex {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    /*Grids Por Areas*/
+
+    #gridAreas {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 30px 40px 150px;
+        /* Estructura */
+        grid-template-areas:
+            "cabeza"
+            "menu"
+            "filtros"
+            "productos"
+            "publicidad"
+            "pie"
+    }
+
+    /* Areas */
+
+    aside {
+        grid-area: filtros;
+    }
+
+    #productos {
+        grid-area: productos;
+    }
+
+    #publicidad {
+        grid-area: publicidad;
+        background-color: rgb(7, 6, 6);
+    }
+
+    header {
+        grid-area: cabeza;
+    }
+
+    footer {
+        grid-area: pie;
+    }
+
+    nav {
+        grid-area: menu;
+        background-color: black;
+    }
+}
+
+/*TABLETS*/
+
+@media (min-width: 480px) and (max-width: 1023px) {
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Quicksand', sans-serif;
+    }
+
+    .border {
+        border: solid 1px #000000;
+    }
+
+    body {
+        height: 100vh;
+        width: 100%;
+    }
+
+    span {
+        background-color: rgb(253, 253, 253);
+        margin-bottom: 30px;
+        padding: 10px;
+    }
+
+    img {
+        margin: 0px 15px;
+    }
+
+
+    header {
+        background-color: rgb(255, 226, 59);
+        color: rgb(7, 6, 6);
+        padding: 0px;
+    }
+
+    img.logo {
+        width: 12%;
+    }
+
+    h1 {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: bolder;
+        margin: 5px;
+        text-align: center;
+    }
+
+    footer {
+        background-color: black;
+        color: rgb(255, 226, 59);
+        padding: 5px;
+        text-align: center;
+        font-family: 'Quicksand', sans-serif;
+    }
+
+    p {
+        font-family: 'Quicksand', sans-serif;
+        text-align: center;
+        font-weight: bold;
+        border-style: none none solid none;
+        border-width: 10px;
+        border-color: rgb(0, 0, 0);
+        padding: 3px;
+        margin: 0px 30px 30px 30px;
+    }
+
+    p:hover {
+        background-color: black;
+        color: rgb(255, 226, 59);
+    }
+
+
+    /*FlexBoxMenu*/
+
+    .flexMenu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    span {
+        width: 100px;
+        height: 20px;
+        background-color: #000000;
+        border-radius: 0px;
+        margin: 0px;
+        padding: 10px;
+        color: #ffffff;
+        list-style-type: none;
+        cursor: pointer;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: bold;
+    }
+
+    span a {
+        color: white;
+        text-decoration-line: none;
+        cursor: pointer;
+    }
+
+    span a:hover {
+        background-color: black;
+        color: rgb(255, 226, 59);
+    }
+
+    /*FlexBoxFiltros*/
+
+    .flexFiltros {
+        display: flex;
+        flex-direction: column;
+    }
+
+    li {
+        height: 20px;
+        background-color: rgb(241, 241, 241);
+        padding: 7px;
+        color: #000000;
+        list-style-type: none;
+        cursor: pointer;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: bold;
+    }
+
+    li:hover {
+        background-color: black;
+        color: rgb(255, 226, 59);
+    }
+
+    aside {
+        background-color: rgb(241, 241, 241);
+    }
+
+    .productosFlex {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    /*Grids Por Areas*/
+
+    #gridAreas {
+        display: grid;
+        grid-template-columns: 15% auto 15%;
+        grid-template-rows: 80px 40px 1fr 30px;
+        /* Estructura */
+        grid-template-areas:
+            "cabeza cabeza cabeza"
+            "menu menu menu"
+            "filtros productos publicidad"
+            "pie pie pie"
+    }
+
+    /* Areas */
+
+    aside {
+        grid-area: filtros;
+    }
+
+    #productos {
+        grid-area: productos;
+    }
+
+    #publicidad {
+        grid-area: publicidad;
+        background-color: rgb(7, 6, 6);
+    }
+
+    header {
+        grid-area: cabeza;
+    }
+
+    footer {
+        grid-area: pie;
+    }
+
+    nav {
+        grid-area: menu;
+        background-color: black;
+    }
+}
+
+/*DESKTOP*/
+
+@media (min-width: 1024px) {
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Quicksand', sans-serif;
+    }
+
+    .border {
+        border: solid 1px #000000;
+    }
+
+    body {
+        height: 100vh;
+        width: 100%;
+    }
+
+    span {
+        background-color: rgb(253, 253, 253);
+        margin-bottom: 30px;
+        padding: 10px;
+    }
+
+    img {
+        margin: 0px 15px;
+    }
+
+
+    header {
+        background-color: rgb(255, 226, 59);
+        color: rgb(7, 6, 6);
+        padding: 0px;
+    }
+
+    img.logo {
+        width: 12%;
+    }
+
+    h1 {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: bolder;
+        margin: 5px;
+        text-align: center;
+    }
+
+    footer {
+        background-color: black;
+        color: rgb(255, 226, 59);
+        padding: 5px;
+        text-align: center;
+        font-family: 'Quicksand', sans-serif;
+    }
+
+    p {
+        font-family: 'Quicksand', sans-serif;
+        text-align: center;
+        font-weight: bold;
+        border-style: none none solid none;
+        border-width: 10px;
+        border-color: rgb(0, 0, 0);
+        padding: 3px;
+        margin: 0px 30px 30px 30px;
+    }
+
+    p:hover {
+        background-color: black;
+        color: rgb(255, 226, 59);
+    }
+
+
+    /*FlexBoxMenu*/
+
+    .flexMenu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    span {
+        width: 100px;
+        height: 20px;
+        background-color: #000000;
+        border-radius: 0px;
+        margin: 0px;
+        padding: 10px;
+        color: #ffffff;
+        list-style-type: none;
+        cursor: pointer;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: bold;
+    }
+
+    span a {
+        color: white;
+        text-decoration-line: none;
+        cursor: pointer;
+    }
+
+    span a:hover {
+        background-color: black;
+        color: rgb(255, 226, 59);
+    }
+
+    /*FlexBoxFiltros*/
+
+    .flexFiltros {
+        display: flex;
+        flex-direction: column;
+    }
+
+    li {
+        height: 20px;
+        background-color: rgb(241, 241, 241);
+        padding: 7px;
+        color: #000000;
+        list-style-type: none;
+        cursor: pointer;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: bold;
+    }
+
+    li:hover {
+        background-color: black;
+        color: rgb(255, 226, 59);
+    }
+
+    aside {
+        background-color: rgb(241, 241, 241);
+    }
+
+    .productosFlex {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    /*Grids Por Areas*/
+
+    #gridAreas {
+        display: grid;
+        grid-template-columns: 15% auto 15%;
+        grid-template-rows: 80px 40px 1fr 30px;
+        /* Estructura */
+        grid-template-areas:
+            "cabeza cabeza cabeza"
+            "menu menu menu"
+            "filtros productos publicidad"
+            "pie pie pie"
+    }
+
+    /* Areas */
+
+    aside {
+        grid-area: filtros;
+    }
+
+    #productos {
+        grid-area: productos;
+    }
+
+    #publicidad {
+        grid-area: publicidad;
+        background-color: rgb(7, 6, 6);
+    }
+
+    header {
+        grid-area: cabeza;
+    }
+
+    footer {
+        grid-area: pie;
+    }
+
+    nav {
+        grid-area: menu;
+        background-color: black;
+    }
+}
